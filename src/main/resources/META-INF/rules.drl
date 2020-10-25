@@ -1,0 +1,28 @@
+package org.jahiacommunity.modules.openstreetmap.rules
+
+// list any import classes here.
+import org.jahiacommunity.modules.location.*
+import org.jahia.services.content.rules.*
+import org.jahia.services.content.*
+import javax.jcr.observation.Event
+import org.slf4j.Logger
+
+expander rules.dsl
+
+// declare any global variables here
+global User user
+global Service service
+global Logger logger
+global JCRContentUtils jcrUtils
+global JCRStoreProvider provider
+global OSMLocationService osmlocationService
+
+rule "Geocode OSM location"
+    when
+        Not in operation import
+        Location OSM data has been changed on a node
+        Automatic OSM geocoding is enabled on the node
+    then
+       Log "Location OSM data has changed on " + node.getPath() + ". Will try to detect the latitude/longitude automatically"
+       Geocode through OSM the node
+end

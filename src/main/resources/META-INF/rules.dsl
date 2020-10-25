@@ -1,0 +1,3 @@
+[condition][]Location OSM data has been changed on a node=property : ChangedPropertyFact ( name in ("street", "zipCode", "town", "country", "geocodeAutomatically"), propertyName : name, propertyValue : stringValues , node : node , $node : node, node.types contains "jcosmnt:location" || node.types contains "jcosmmix:locationAware")
+[condition][]Automatic OSM geocoding is enabled on the node=ChangedPropertyFact ( name == "geocodeAutomatically" , stringValue == "true" ) from $node.properties
+[consequence][]Geocode through OSM the {node}=osmlocationService.geocodeLocation({node}, drools);

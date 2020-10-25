@@ -1,0 +1,47 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jcr = 'http://www.jcp.org/jcr/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+<jcosmmix = 'http://www.jahiacommunity.org/osm/mix/1.0'>
+<jcosmnt = 'http://www.jahiacommunity.org/osm/nt/1.0'>
+
+[jcosmmix:geotagged] mixin
+ extends = jnt:content
+ itemtype = options
+ - latitude (double) nofulltext
+ - longitude (double) nofulltext
+
+[jcosmmix:locationAware] mixin
+ extends = jnt:content
+ itemtype = options
+ - street (string)
+ - zipCode (string) analyzer='keyword'
+ - town (string) facetable
+ - country (string,choicelist[country,flag]) facetable
+ - geocodeAutomatically (boolean) = true autocreated
+
+
+[jcosmnt:location] > jnt:content, mix:title, jmix:editorialContent, jmix:structuredContent
+ - street (string)
+ - zipCode (string) analyzer='keyword'
+ - town (string) facetable
+ - country (string,choicelist[country,flag]) facetable
+ - latitude (string) nofulltext
+ - longitude (string) nofulltext
+ - geocodeAutomatically (boolean) = true autocreated
+
+[jcosmnt:staticMap] > jnt:content, mix:title, jmix:bindedComponent, jmix:siteComponent
+ - mapType (string,choicelist[resourceBundle]) = 'roadmap' indexed=no < 'roadmap','satellite','terrain','hybrid'
+ - zoom (string,choicelist) = 'auto' indexed=no < 'auto','0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21'
+ - imageType (string,choicelist[resourceBundle]) = 'png8' indexed=no < 'png8','png32','gif','jpg','jpg-baseline'
+ - height (long) = 300 indexed=no < '[1,640]'
+ - width (long) = 500 indexed=no < '[1,640]'
+ - markerSize (string,choicelist) = 'normal' indexed=no < 'normal','mid','small','tiny'
+ - markerColor (string,choicelist[resourceBundle]) = 'normal' indexed=no < 'normal','black','brown','green','purple','yellow','blue','gray','orange','red','white'
+
+[jcosmnt:map] > jnt:content, mix:title, jmix:bindedComponent, jmix:siteComponent
+ - mapType (string,choicelist[resourceBundle]) = 'roadmap' indexed=no < 'roadmap','satellite','terrain','hybrid'
+ - zoom (long) mandatory indexed=no
+ - height (long) = 300 indexed=no
+ - width (long) = 500 indexed=no
+ - markerImage (weakreference, picker[type='image'])
