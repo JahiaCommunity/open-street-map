@@ -20,7 +20,6 @@
  - country (string,choicelist[country,flag]) facetable
  - geocodeAutomatically (boolean) = true autocreated
 
-
 [jcosmnt:location] > jnt:content, mix:title, jmix:editorialContent, jmix:structuredContent
  - street (string)
  - zipCode (string) analyzer='keyword'
