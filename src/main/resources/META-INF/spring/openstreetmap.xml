@@ -14,4 +14,12 @@
         </property>
     </bean>
 
+
+    <bean class="org.jahiacommunity.modules.location.filters.MapAttributesFilter">
+        <property name="priority" value="31"/>
+        <property name="description" value="OSM module: Inject maps parameter in request to be used by map .jsp"/>
+        <property name="mapProviderApiKey" value="${jahiacommunity.modules.osm.attr.map.key:}"/>
+        <property name="applyOnNodeTypes" value="jcosmnt:map,jcosmnt:staticMap"/>
+    </bean>
+
 </beans>
