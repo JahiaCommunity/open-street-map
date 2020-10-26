@@ -27,7 +27,7 @@
         <repository>
             <id>github</id>
             <name>GitHub JahiaCommunity Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/JahiaCommunity/html5</url>
+            <url>https://maven.pkg.github.com/JahiaCommunity/open-street-map</url>
         </repository>
     </distributionManagement>
 
@@ -62,7 +62,7 @@
                 <repository>
                     <id>github</id>
                     <name>GitHub JahiaCommunity Apache Maven Packages</name>
-                    <url>https://maven.pkg.github.com/JahiaCommunity/html5</url>
+                    <url>https://maven.pkg.github.com/JahiaCommunity/open-street-map</url>
                 </repository>
             </repositories>
         </profile>
