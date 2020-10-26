@@ -30,18 +30,13 @@
  - longitude (string) nofulltext
  - geocodeAutomatically (boolean) = true autocreated
 
-[jcosmnt:staticMap] > jnt:content, mix:title, jmix:bindedComponent, jmix:siteComponent
- - mapType (string,choicelist[resourceBundle]) = 'roadmap' indexed=no < 'roadmap','satellite','terrain','hybrid'
- - zoom (string,choicelist) = 'auto' indexed=no < 'auto','0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21'
- - imageType (string,choicelist[resourceBundle]) = 'png8' indexed=no < 'png8','png32','gif','jpg','jpg-baseline'
- - height (long) = 300 indexed=no < '[1,640]'
- - width (long) = 500 indexed=no < '[1,640]'
- - markerSize (string,choicelist) = 'normal' indexed=no < 'normal','mid','small','tiny'
- - markerColor (string,choicelist[resourceBundle]) = 'normal' indexed=no < 'normal','black','brown','green','purple','yellow','blue','gray','orange','red','white'
-
 [jcosmnt:map] > jnt:content, mix:title, jmix:bindedComponent, jmix:siteComponent
  - mapType (string,choicelist[resourceBundle]) = 'roadmap' indexed=no < 'roadmap','satellite','terrain','hybrid'
- - zoom (long) mandatory indexed=no
+ - zoom (string,choicelist) = '18' indexed=no < 'auto','0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21'
  - height (long) = 300 indexed=no
  - width (long) = 500 indexed=no
  - markerImage (weakreference, picker[type='image'])
+ - markerSize (string,choicelist) = 'normal' indexed=no < 'normal','mid','small','tiny'
+ - markerColor (string,choicelist[resourceBundle]) = 'normal' indexed=no < 'normal','black','brown','green','purple','yellow','blue','gray','orange','red','white'
+ - makeMapStatic (boolean)
+
