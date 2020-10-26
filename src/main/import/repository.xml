@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
    <modules jcr:primaryType="jnt:modules">
-      <openstreetmap j:dependencies="default"
-                     j:modulePriority="0"
-                     j:moduleType="module"
-                     j:title="OpenStreetMap (OSM) module"
-                     jcr:primaryType="jnt:module">
+      <open-street-map j:dependencies="default"
+                       j:modulePriority="0"
+                       j:moduleType="module"
+                       j:title="OpenStreetMap (OSM) module"
+                       jcr:primaryType="jnt:module">
          <portlets jcr:primaryType="jnt:portletFolder"/>
          <files jcr:primaryType="jnt:folder"/>
          <contents jcr:primaryType="jnt:contentFolder"/>
@@ -13,6 +13,6 @@
             <files jcr:primaryType="jnt:folder"/>
             <contents jcr:primaryType="jnt:contentFolder"/>
          </templates>
-      </openstreetmap>
+      </open-street-map>
    </modules>
 </content>

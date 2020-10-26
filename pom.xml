@@ -12,7 +12,7 @@
     <groupId>org.jahiacommunity.modules</groupId>
     <artifactId>open-street-map</artifactId>
     <name>OpenStreetMap (OSM) module</name>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <description>This is the custom module (OpenStreetMap (OSM) module) for running on a Digital Experience Manager server.</description>
 
