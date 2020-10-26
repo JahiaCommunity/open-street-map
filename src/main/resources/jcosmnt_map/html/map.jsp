@@ -33,7 +33,6 @@
 	            $(document).ready(function() {
 	                var options = '';
 	                <c:if test="${makeMapStatic}" >
-                        console.log("makeMapStatic= "+${makeMapStatic});
                         //https://leafletjs.com/reference-1.7.1.html#map-zoomcontrol
                         options = { zoomControl: false, trackResize:true, boxZoom:false, doubleClickZoom:false,dragging: false };
                     </c:if>
