@@ -7,7 +7,7 @@
         <property name="globalRulesObject">
             <map>
                 <entry key="osmlocationService">
-                    <bean class="org.jahiacommunity.modules.location.OSMLocationService">
+                    <bean class="org.jahiacommunity.modules.openstreetmap.OSMLocationService">
                     </bean>
                 </entry>
             </map>
@@ -15,7 +15,7 @@
     </bean>
 
 
-    <bean class="org.jahiacommunity.modules.location.filters.MapAttributesFilter">
+    <bean class="org.jahiacommunity.modules.openstreetmap.filters.MapAttributesFilter">
         <property name="priority" value="31"/>
         <property name="description" value="OSM module: Inject maps parameter in request to be used by map .jsp"/>
         <property name="mapProviderApiKey" value="${jahiacommunity.modules.osm.attr.map.key:}"/>

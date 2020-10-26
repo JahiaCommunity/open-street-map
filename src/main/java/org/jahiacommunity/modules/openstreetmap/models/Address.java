@@ -1,4 +1,4 @@
-package org.jahiacommunity.modules.location.models;
+package org.jahiacommunity.modules.openstreetmap.models;
 
 public class Address {
 

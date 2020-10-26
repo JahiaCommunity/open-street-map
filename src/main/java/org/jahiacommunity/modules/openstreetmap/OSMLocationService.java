@@ -1,4 +1,4 @@
-package org.jahiacommunity.modules.location;
+package org.jahiacommunity.modules.openstreetmap;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -6,8 +6,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
-import org.jahiacommunity.modules.location.models.Address;
-import org.jahiacommunity.modules.location.services.OSMQueryService;
+import org.jahiacommunity.modules.openstreetmap.models.Address;
+import org.jahiacommunity.modules.openstreetmap.services.OSMQueryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import retrofit2.Call;

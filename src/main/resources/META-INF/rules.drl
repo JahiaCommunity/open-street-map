@@ -1,7 +1,7 @@
 package org.jahiacommunity.modules.openstreetmap.rules
 
 // list any import classes here.
-import org.jahiacommunity.modules.location.*
+import org.jahiacommunity.modules.openstreetmap.*
 import org.jahia.services.content.rules.*
 import org.jahia.services.content.*
 import javax.jcr.observation.Event

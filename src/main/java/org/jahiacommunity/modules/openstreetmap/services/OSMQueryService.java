@@ -1,6 +1,6 @@
-package org.jahiacommunity.modules.location.services;
+package org.jahiacommunity.modules.openstreetmap.services;
 
-import org.jahiacommunity.modules.location.models.Address;
+import org.jahiacommunity.modules.openstreetmap.models.Address;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;

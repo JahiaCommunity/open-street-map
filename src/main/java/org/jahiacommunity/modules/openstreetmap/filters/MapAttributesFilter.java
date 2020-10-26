@@ -1,4 +1,4 @@
-package org.jahiacommunity.modules.location.filters;
+package org.jahiacommunity.modules.openstreetmap.filters;
 
 import org.apache.commons.lang.StringUtils;
 import org.jahia.services.render.RenderContext;
