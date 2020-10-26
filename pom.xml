@@ -10,7 +10,7 @@
         <version>7.2.1.0</version>
     </parent>
     <groupId>org.jahiacommunity.modules</groupId>
-    <artifactId>openstreetmap</artifactId>
+    <artifactId>open-street-map</artifactId>
     <name>OpenStreetMap (OSM) module</name>
     <version>1.0.1</version>
     <packaging>bundle</packaging>
