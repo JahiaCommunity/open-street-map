@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
@@ -14,7 +14,10 @@
     <name>OpenStreetMap (OSM) module</name>
     <version>1.0.2-SNAPSHOT</version>
     <packaging>bundle</packaging>
-    <description>This is the custom module (OpenStreetMap (OSM) module) for running on a Digital Experience Manager server.</description>
+    <inceptionYear>2020</inceptionYear>
+    <description>This is the custom module (OpenStreetMap (OSM) module) for running on a Digital Experience Manager
+        server.
+    </description>
 
     <scm>
         <connection>scm:git:git@github.com:JahiaCommunity/open-street-map.git</connection>
@@ -22,7 +25,28 @@
         <url>scm:git:git@github.com:JahiaCommunity/open-street-map.git</url>
         <tag>HEAD</tag>
     </scm>
+    <developers>
+        <developer>
+            <id>cedfou</id>
+            <name>FOURNEAU Cédric</name>
+            <organization>JahiaCommunity</organization>
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <organization>JahiaCommunity</organization>
+        </contributor>
+    </contributors>
+    <url>https://github.com/JahiaCommunity/open-street-map</url>
+    <organization>
+        <name>Jahia Community</name>
+        <url>https://www.jahiacommunity.org</url>
+    </organization>
 
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/JahiaCommunity/open-street-map/issues</url>
+    </issueManagement>
     <distributionManagement>
         <repository>
             <id>github</id>
@@ -56,8 +80,12 @@
                 <repository>
                     <id>central</id>
                     <url>https://repo1.maven.org/maven2</url>
-                    <releases><enabled>true</enabled></releases>
-                    <snapshots><enabled>true</enabled></snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
                 </repository>
                 <repository>
                     <id>github</id>

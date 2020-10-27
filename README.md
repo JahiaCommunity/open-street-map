@@ -2,7 +2,7 @@
     <img src="https://doc.jahiacommunity.org/files/live/sites/doc/files/logos/jc-resource-center-200.png" alt="Jahia Community logo" title="Jahia Community Documentation" align="right" height="60" />
 </a>
 
-# openstreetmap
+# Open Street Map
 Open Source Map module alternative to Gmaps (based on OpenStreetMap geocoding and LeafLet JS for maps)
 
 
